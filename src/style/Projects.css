@@ -1,0 +1,324 @@
+.projects-section {
+  padding: 60px 20px;
+  background-color: var(--bg-color);
+  border-top: 4px solid var(--accent-color);
+  border-bottom: 4px solid var(--accent-color);
+  font-family: 'Press Start 2P', monospace;
+  color: var(--text-color);
+}
+
+
+.project-card {
+  background-color: #111;
+  border: 3px solid #FFD500;
+  box-shadow: 6px 6px 0 #000;
+  border-radius: 12px;
+  padding: 24px;
+  width: 320px;
+  transition: transform 0.2s ease;
+  font-family: 'Press Start 2P', monospace;
+  color: #FFF;
+  position: relative;
+   flex: 1 1 320px;
+  max-width: 360px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 10px 10px 0 #FFD500;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.project-logo {
+  width: 32px;
+  height: 32px;
+}
+.projects-section {
+  padding: 60px 20px;
+  background-color: var(--bg-color);
+  border-top: 4px solid var(--accent-color);
+  border-bottom: 4px solid var(--accent-color);
+  font-family: 'Press Start 2P', monospace;
+  color: var(--text-color);
+}
+
+.projects-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: var(--accent-color);
+  text-shadow: 2px 2px #000;
+  font-family: 'Press Start 2P', monospace;
+}
+
+
+.project-title {
+  font-size: 12px;
+  color: #FFD500;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #00ffcc;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.project-description {
+  font-size: 10px;
+  color: #ccc;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.tag-list {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tag-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.project-link {
+  background-color: #FFD500;
+  color: #000;
+  padding: 10px;
+  display: inline-block;
+  font-size: 10px;
+  text-decoration: none;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0 #000;
+  transition: all 0.2s ease;
+}
+
+.project-link:hover {
+  background-color: #FF79C6;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 #000;
+}
+
+.project-card.expanded {
+  max-width: 500px;
+  transition: all 0.3s ease;
+}
+
+.project-subdescription {
+  margin-top: 12px;
+  padding-left: 16px;
+  font-size: 9px;
+  color: #8be9fd;
+  list-style: none;
+}
+
+.project-subdescription li {
+  margin-bottom: 6px;
+}
+.project-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.project-toggle-btn {
+  font-size: 10px;
+  background-color: transparent;
+  color: #FFD500;
+  border: 2px solid #FFD500;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', monospace;
+  transition: background-color 0.2s ease;
+}
+
+.project-toggle-btn:hover {
+  background-color: #FFD500;
+  color: #000;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid #FFD500;
+  color: #FFD500;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.github-link:hover {
+  transform: scale(1.1);
+  background-color: #FFD500;
+  color: #000;
+}
+
+.project-card.project-tamagotchi {
+  background-color: #0e2f1f;
+  border: 3px solid #27ae60;
+  box-shadow: 6px 6px 0 #14532d;
+}
+
+.project-card.project-tamagotchi .project-title {
+  color: #2ecc71;
+}
+
+.project-card.project-tamagotchi .project-img {
+  border-color: #2ecc71;
+}
+
+.project-card.project-tamagotchi .project-toggle-btn,
+.project-card.project-tamagotchi .github-link {
+  border-color: #2ecc71;
+  color: #2ecc71;
+}
+
+.project-card.project-tamagotchi .project-toggle-btn:hover,
+.project-card.project-tamagotchi .github-link:hover {
+  background-color: #2ecc71;
+  color: #000;
+}
+/* Inventario Css */
+.project-card.project-inventario {
+  background-color: #0d1b2a;
+  border: 3px solid #1e90ff;
+  box-shadow: 6px 6px 0 #0a3d62;
+}
+
+.project-card.project-inventario .project-title {
+  color: #1e90ff;
+}
+
+.project-card.project-inventario .project-img {
+  border-color: #1e90ff;
+}
+
+.project-card.project-inventario .project-toggle-btn,
+.project-card.project-inventario .github-link {
+  border-color: #1e90ff;
+  color: #1e90ff;
+}
+
+.project-card.project-inventario .project-toggle-btn:hover,
+.project-card.project-inventario .github-link:hover {
+  background-color: #1e90ff;
+  color: #000;
+}
+/* Fiesta  */
+.project-card.project-figma {
+  background-color: #1a002d; /* fondo oscuro morado */
+  border: 3px solid #d946ef; /* rosa/morado neón */
+  box-shadow: 6px 6px 0 #7e22ce; /* sombra púrpura intensa */
+}
+
+.project-card.project-figma .project-title {
+  color: #d946ef; /* rosa neón */
+}
+
+.project-card.project-figma .project-img {
+  border-color: #d946ef;
+}
+
+.project-card.project-figma .project-toggle-btn,
+.project-card.project-figma .github-link {
+  border-color: #d946ef;
+  color: #d946ef;
+}
+
+.project-card.project-figma .project-toggle-btn:hover,
+.project-card.project-figma .github-link:hover {
+  background-color: #d946ef;
+  color: #1a002d; /* fondo base para buen contraste */
+}
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 40px 12px;
+  }
+
+  .projects-title {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: 320px;
+    flex: none;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .project-header {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .project-title {
+    font-size: 11px;
+  }
+
+  .project-description {
+    font-size: 10px;
+  }
+
+  .project-subdescription {
+    font-size: 9px;
+    padding-left: 0;
+  }
+
+  .tag-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-link,
+  .project-toggle-btn,
+  .github-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+

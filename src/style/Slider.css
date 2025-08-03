@@ -1,0 +1,71 @@
+/* --- Modal Base --- */
+.modal-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  gap: 16px;
+  position: relative;
+}
+
+/* Botones por defecto (desktop) */
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 36px;
+  color: #FFD500;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.2s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.nav-button:hover {
+  transform: translateY(-50%) scale(1.3);
+}
+
+.nav-button.left {
+  left: -20px;
+}
+
+.nav-button.right {
+  right: -20px;
+}
+
+/* Imagen */
+.modal-image {
+  width: 100%;
+  max-height: 65vh;
+  border: 3px solid #FFD500;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+/* --- Móvil: Cambiar comportamiento --- */
+@media (max-width: 600px) {
+  .modal-gallery {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-button {
+    position: static;           /* 🔥 Deja de ser absoluto */
+    transform: none;            /* 🔥 Quita el translate */
+    font-size: 24px;
+    display: inline-flex;       /* 🔥 Se ponen en fila debajo de la imagen */
+    margin: 0 6px;
+  }
+
+  .nav-button:hover {
+    transform: scale(1.2);
+  }
+
+  .modal-image {
+    max-height: 40vh;
+    border-width: 2px;
+    border-radius: 8px;
+  }
+}

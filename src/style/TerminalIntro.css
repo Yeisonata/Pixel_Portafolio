@@ -1,0 +1,108 @@
+.terminal-box {
+  font-family: 'VT323', monospace;
+  background-color: var(--terminal-bg);
+  color: var(--terminal-text);
+  width: 90%;
+  max-width: 600px;
+  border: 3px solid var(--terminal-border);
+  box-shadow: 6px 6px 0 var(--terminal-shadow);
+  margin: 2rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.terminal-bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--terminal-bar-bg);
+  padding: 0.5rem;
+  position: relative;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.red {
+  background-color: #ff5f56;
+}
+.yellow {
+  background-color: #ffbd2e;
+}
+.green {
+  background-color: #27c93f;
+}
+
+.terminal-title {
+  color: var(--terminal-title);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+
+.terminal-body {
+  padding: 1rem;
+}
+
+.cmd {
+  color: var(--accent-color);
+}
+
+.output {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+.blinking-cursor {
+  display: inline-block;
+  width: 10px;
+  animation: blink 1s steps(2, start) infinite;
+  color: var(--accent-color); /* puedes usar --terminal-text si prefieres */
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@media (max-width: 600px) {
+  .terminal-box {
+    width: 95%;
+    margin: 1.5rem auto;
+    box-shadow: 4px 4px 0 var(--terminal-shadow);
+  }
+
+  .terminal-bar {
+    padding: 0.4rem 0.5rem;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin-right: 6px;
+  }
+
+  .terminal-title {
+    font-size: 12px;
+  }
+
+  .terminal-body {
+    padding: 0.8rem;
+  }
+
+  .output {
+    font-size: 0.85rem;
+  }
+
+  .cmd {
+    font-size: 0.85rem;
+  }
+
+  .blinking-cursor {
+    width: 8px;
+  }
+}
+
+

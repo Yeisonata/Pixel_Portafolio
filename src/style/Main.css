@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* MAIN PROFILE SECTION */
+main.main-profile {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 48px 32px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Press Start 2P', monospace;
+  flex-wrap: wrap;
+}
+
+/* AVATAR */
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  box-shadow: 0 0 12px var(--accent-color);
+}
+
+/* USERNAME */
+.username {
+  font-size: 0.9rem;
+  margin-top: 16px;
+  color: var(--highlight-color);
+}
+
+/* INFO TEXT */
+.info-section {
+  max-width: 620px;
+}
+
+.greeting {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  color: var(--accent-color);
+}
+
+.greeting span {
+  color: var(--text-strong);
+}
+
+.role {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: var(--role-color);
+}
+
+.description {
+  font-size: 0.7rem;
+  line-height: 1.6;
+  color: var(--secondary-text);
+  margin-bottom: 24px;
+}
+
+/* CONTACTO */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  font-size: 0.7rem;
+  color: var(--contact-color);
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+}
+.frameworks-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;   /* Ajusta según tu diseño */
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.orbit-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+  object-fit: contain;
+}
+
+.orbit-icon:hover {
+  transform: scale(1.1);
+}

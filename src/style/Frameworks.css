@@ -1,0 +1,72 @@
+.frameworks-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.orbit-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+}
+
+.orbit-icon:hover {
+  transform: scale(1.1);
+}
+
+
+.frameworks-wrapper {
+  position: relative;
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbit-path {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orbit-path-circle {
+  stroke: var(--orbit-path-color);
+  stroke-width: 1;
+  fill: none;
+}
+
+@media (max-width: 600px) {
+  .frameworks-container {
+    max-width: 280px;
+    height: 180px;
+  }
+
+  .orbit-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .frameworks-wrapper {
+    height: 12rem;
+  }
+
+  .orbit-path-circle {
+    stroke-width: 0.8;
+  }
+}
+
+
