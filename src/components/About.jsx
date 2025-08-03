@@ -1,4 +1,3 @@
-import { Frameworks } from "./Frameworks";
 import logo from "../assets/Me.jpeg";
 import "../style/About.css";
 const About = () => {

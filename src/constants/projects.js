@@ -15,7 +15,7 @@ import FigmaPreview2 from "../assets/FigmaPreview2.jpg";
 import FigmaPreview3 from "../assets/FigmaPreview3.jpg";
 import FigmaPreview4 from "../assets/FigmaPreview4.jpg";
 import FigmaPreview5 from "../assets/FigmaPreview5.jpg";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 
 

@@ -7,9 +7,10 @@ const Footer = () => {
       <div className="footer-divider" />
 
       <div className="footer-links">
-        <a href="#">Terms & Conditions</a>
-        <span>|</span>
-        <a href="#">Privacy Policy</a>
+        <a href="/terms">Terms & Conditions</a>
+<span>|</span>
+<a href="/privacy">Privacy Policy</a>
+
       </div>
 
       <div className="footer-socials">
